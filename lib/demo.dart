@@ -1,3 +1,4 @@
+import 'package:demo1/config/color.dart';
 import 'package:demo1/dashboard/dasshboard_web.dart';
 import 'package:flutter/material.dart';
 
@@ -25,13 +26,19 @@ class _DemoState extends State<Demo> {
       body: Row(
         children: <Widget>[
           NavigationRail(
+            leading: Image.asset(
+              "assets/image/logo.png",
+              color: ColorConst.primaryColor,
+              height: 150,
+              width: 150,
+            ),
+            backgroundColor: ColorConst.backGround,
             selectedIndex: _selectedIndex,
             groupAlignment: -1.0,
             onDestinationSelected: (int index) {
               setState(
                 () {
                   _selectedIndex = index;
-
                 },
               );
             },
@@ -60,7 +67,9 @@ class _DemoState extends State<Demo> {
           // ),
           // This is the main content.
           if (_selectedIndex == 0)
-            const DashboardWeb(),
+            const Expanded(
+              child: DashboardWeb(),
+            ),
         ],
       ),
     );
