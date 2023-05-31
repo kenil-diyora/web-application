@@ -151,48 +151,50 @@ class WebOverview extends StatelessWidget {
                   vertical: 20,
                 ),
                 color: ColorConst.containerColor,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      "Alerts",
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
-                        color: ColorConst.white,
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        "Alerts",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: ColorConst.white,
+                        ),
                       ),
-                    ),
-                    alertNote(
-                      tMargin: 15,
-                      bMargin: 15,
-                      note:
-                          "Heads up, you've used up 90% of your shopping budget for this month.",
-                      icon: Icons.menu,
-                    ),
-                    alertNote(
-                      bMargin: 15,
-                      note: "You've spent \$120 on Restaurants this week.",
-                      icon: Icons.menu,
-                    ),
-                    alertNote(
-                      bMargin: 15,
-                      note: "You've spent \$24 in ATM fees this week.",
-                      icon: Icons.credit_card,
-                    ),
-                    alertNote(
-                      bMargin: 15,
-                      note:
-                          "Good work! Your checking account is 4% higher than last month.",
-                      icon: Icons.attach_money,
-                    ),
-                    alertNote(
-                      bMargin: 15,
-                      note:
-                          "Increase your potential tax deduction Assign categories to 16 unassigned transactions.",
-                      icon: Icons.not_interested_outlined,
-                    ),
-                  ],
+                      alertNote(
+                        tMargin: 15,
+                        bMargin: 15,
+                        note:
+                            "Heads up, you've used up 90% of your shopping budget for this month.",
+                        icon: Icons.menu,
+                      ),
+                      alertNote(
+                        bMargin: 15,
+                        note: "You've spent \$120 on Restaurants this week.",
+                        icon: Icons.menu,
+                      ),
+                      alertNote(
+                        bMargin: 15,
+                        note: "You've spent \$24 in ATM fees this week.",
+                        icon: Icons.credit_card,
+                      ),
+                      alertNote(
+                        bMargin: 15,
+                        note:
+                            "Good work! Your checking account is 4% higher than last month.",
+                        icon: Icons.attach_money,
+                      ),
+                      alertNote(
+                        bMargin: 15,
+                        note:
+                            "Increase your potential tax deduction Assign categories to 16 unassigned transactions.",
+                        icon: Icons.not_interested_outlined,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
