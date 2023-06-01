@@ -46,17 +46,20 @@ class WebOverview extends StatelessWidget {
                                     expense: "\$12,134.49",
                                   ),
                                   expenseContainer(
+                                    context,
                                     title: "Checking",
                                     subTitle: "******3466",
                                     expense: "\$2,215.13",
                                     statusColor: const Color(0xFF085653),
                                   ),
                                   expenseContainer(
+                                      context,
                                       title: "Home Savings",
                                       subTitle: "******3466",
                                       expense: "\$8,678.88",
                                       statusColor: const Color(0xFF21A573)),
                                   expenseContainer(
+                                    context,
                                     title: "Car Savings",
                                     subTitle: "******9012",
                                     expense: "\$987.48",
@@ -81,18 +84,21 @@ class WebOverview extends StatelessWidget {
                                     expense: "\$1,732.69",
                                   ),
                                   expenseContainer(
+                                    context,
                                     title: "RedPay Credit",
                                     subTitle: "Jan 29",
                                     expense: "\$45.36",
                                     statusColor: Colors.yellow,
                                   ),
                                   expenseContainer(
+                                    context,
                                     title: "Rent",
                                     subTitle: "Feb 9",
                                     expense: "\$1,200.00",
                                     statusColor: Colors.red,
                                   ),
                                   expenseContainer(
+                                    context,
                                     title: "TabFine Credit",
                                     subTitle: "Fab 22",
                                     expense: "\$87.33",
@@ -114,6 +120,7 @@ class WebOverview extends StatelessWidget {
                         verticalMargin: 20,
                       ),
                       shopContainer(
+                        context,
                         bMargin: 20,
                         statusColor: const Color(0xFFBEEDF9),
                         title: "Coffee Shops",
@@ -121,6 +128,7 @@ class WebOverview extends StatelessWidget {
                         cost: "\$24.51  ",
                       ),
                       shopContainer(
+                        context,
                         bMargin: 20,
                         statusColor: const Color(0xFF736392),
                         title: "Groceries",
@@ -128,6 +136,7 @@ class WebOverview extends StatelessWidget {
                         cost: "\$153.55  ",
                       ),
                       shopContainer(
+                        context,
                         bMargin: 20,
                         statusColor: const Color(0xFFBEEDF9),
                         title: "Restaurants",

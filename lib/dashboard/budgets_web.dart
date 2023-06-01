@@ -1,10 +1,8 @@
 import 'package:demo1/config/color.dart';
 import 'package:demo1/widget/shop_container.dart';
 import 'package:flutter/material.dart';
-
 import '../widget/budgets_piechart.dart';
 import '../widget/detail_box.dart';
-import '../widget/expense_container.dart';
 
 class WebBudgets extends StatelessWidget {
   const WebBudgets({Key? key}) : super(key: key);
@@ -32,6 +30,7 @@ class WebBudgets extends StatelessWidget {
                       child: budgetsPieChart(),
                     ),
                     shopContainer(
+                      context,
                       statusColor: const Color(0xFFB2F2FF),
                       title: "Coffee Shops",
                       subTitle: "\$45.49 / \$70.00",
@@ -40,6 +39,7 @@ class WebBudgets extends StatelessWidget {
                       bMargin: 7.5,
                     ),
                     shopContainer(
+                      context,
                       statusColor: const Color(0xFFB15DFF),
                       title: "Groceries",
                       subTitle: "\$16.45 / \$170.00",
@@ -48,6 +48,7 @@ class WebBudgets extends StatelessWidget {
                       bMargin: 7.5,
                     ),
                     shopContainer(
+                      context,
                       statusColor: const Color(0xFF5295AA),
                       title: "Restaurants",
                       subTitle: "\$123.25 / \$17000",
@@ -56,6 +57,7 @@ class WebBudgets extends StatelessWidget {
                       bMargin: 7.5,
                     ),
                     shopContainer(
+                      context,
                       statusColor: const Color(0xFF0082FB),
                       title: "Clothing",
                       subTitle: "\$19.45 / \$70.00",

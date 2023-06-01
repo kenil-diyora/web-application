@@ -15,8 +15,10 @@ class TabBudgets extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                bottom: 50,
               ),
               child: Column(
                 children: [
@@ -27,6 +29,7 @@ class TabBudgets extends StatelessWidget {
                     child: budgetsPieChart(),
                   ),
                   shopContainer(
+                    context,
                     statusColor: const Color(0xFFB2F2FF),
                     title: "Coffee Shops",
                     subTitle: "\$45.49 / \$70.00",
@@ -35,6 +38,7 @@ class TabBudgets extends StatelessWidget {
                     bMargin: 7.5,
                   ),
                   shopContainer(
+                    context,
                     statusColor: const Color(0xFFB15DFF),
                     title: "Coffee Shops",
                     subTitle: "\$45.49 / \$70.00",
@@ -43,6 +47,7 @@ class TabBudgets extends StatelessWidget {
                     bMargin: 7.5,
                   ),
                   shopContainer(
+                    context,
                     statusColor: const Color(0xFF5295AA),
                     title: "Coffee Shops",
                     subTitle: "\$45.49 / \$70.00",
@@ -51,6 +56,7 @@ class TabBudgets extends StatelessWidget {
                     bMargin: 7.5,
                   ),
                   shopContainer(
+                    context,
                     statusColor: const Color(0xFF0082FB),
                     title: "Coffee Shops",
                     subTitle: "\$45.49 / \$70.00",
@@ -62,7 +68,9 @@ class TabBudgets extends StatelessWidget {
               ),
             ),
           ),
-          backButton(),
+          backButton(
+            context,
+          ),
         ],
       ),
     );

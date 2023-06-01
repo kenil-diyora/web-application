@@ -9,7 +9,7 @@ Widget settingOption({
     children: [
       Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 20,
+          horizontal: 0,
           vertical: 15,
         ),
         child: Text(

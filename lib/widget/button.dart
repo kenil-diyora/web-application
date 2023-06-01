@@ -26,8 +26,8 @@ Widget button(
       child: Text(
         "$title",
         style: const TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w300,
+          fontSize: 13,
+          fontWeight: FontWeight.w900,
           color: ColorConst.white,
         ),
       ),

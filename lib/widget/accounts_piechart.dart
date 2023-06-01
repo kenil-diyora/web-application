@@ -23,7 +23,6 @@ Widget accountPieChart({
     chartType: ChartType.ring,
     ringStrokeWidth: 5,
     centerText: "Total\n\$12,134.49",
-    // chartLegendSpacing: 10,
     legendOptions: const LegendOptions(
       showLegends: false,
     ),

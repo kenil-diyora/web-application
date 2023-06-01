@@ -12,40 +12,49 @@ class TabSetting extends StatelessWidget {
       backgroundColor: ColorConst.backGround,
       body: Stack(
         children: [
-          backButton(),
           SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                settingOption(
-                  title: "Manage Accounts",
-                ),
-                settingOption(
-                  title: "Tax Documents",
-                ),
-                settingOption(
-                  title: "Passcode and Touch ID",
-                ),
-                settingOption(
-                  title: "Notification",
-                ),
-                settingOption(
-                  title: "Personal Information",
-                ),
-                settingOption(
-                  title: "Paperless Setting",
-                ),
-                settingOption(
-                  title: "Find ATMs",
-                ),
-                settingOption(
-                  title: "Help",
-                ),
-                settingOption(
-                  title: "Sign out",
-                ),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                bottom: 50,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  settingOption(
+                    title: "Manage Accounts",
+                  ),
+                  settingOption(
+                    title: "Tax Documents",
+                  ),
+                  settingOption(
+                    title: "Passcode and Touch ID",
+                  ),
+                  settingOption(
+                    title: "Notification",
+                  ),
+                  settingOption(
+                    title: "Personal Information",
+                  ),
+                  settingOption(
+                    title: "Paperless Setting",
+                  ),
+                  settingOption(
+                    title: "Find ATMs",
+                  ),
+                  settingOption(
+                    title: "Help",
+                  ),
+                  settingOption(
+                    title: "Sign out",
+                  ),
+                ],
+              ),
             ),
+          ),
+          backButton(
+            context,
           ),
         ],
       ),

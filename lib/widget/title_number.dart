@@ -32,15 +32,15 @@ Widget titleNumber({
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
-              color: ColorConst.titleColor,
+              color: ColorConst.white,
             ),
           ),
         ),
         Text(
           "$expense",
           style: const TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.w700,
+            fontSize: 40,
+            fontWeight: FontWeight.w900,
             color: ColorConst.white,
           ),
         ),

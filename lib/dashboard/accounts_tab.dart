@@ -15,8 +15,10 @@ class TabAccounts extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                bottom: 50,
               ),
               child: Column(
                 children: [
@@ -27,24 +29,28 @@ class TabAccounts extends StatelessWidget {
                     child: accountPieChart(),
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFF005D56),
                     title: "Checking",
                     subTitle: "******1234",
                     expense: "\$2,215.13",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFF089C6D),
                     title: "Home Savings",
                     subTitle: "******5678",
                     expense: "\$8,678.88",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFF37EFBA),
                     title: "Car Savings",
                     subTitle: "******9012",
                     expense: "\$987.48",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFF0A5E41),
                     title: "Vacation",
                     subTitle: "******1234",
@@ -54,7 +60,9 @@ class TabAccounts extends StatelessWidget {
               ),
             ),
           ),
-          backButton(),
+          backButton(
+            context,
+          ),
         ],
       ),
     );

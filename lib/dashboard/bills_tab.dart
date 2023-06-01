@@ -15,8 +15,10 @@ class TabBills extends StatelessWidget {
         children: [
           SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 20,
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                bottom: 50,
               ),
               child: Column(
                 children: [
@@ -27,24 +29,28 @@ class TabBills extends StatelessWidget {
                     child: billsPieChart(),
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFFFFDC78),
                     title: "RedPay Credit",
                     subTitle: "Jan29",
                     expense: "\$45.36",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFFFD6851),
                     title: "Rent",
                     subTitle: "Fab 9",
                     expense: "\$1200.00",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFFFFD7D0),
                     title: "TabFine Credit",
                     subTitle: "Fab 22",
                     expense: "\$87.33",
                   ),
                   expenseContainer(
+                    context,
                     statusColor: const Color(0xFFBD8215),
                     title: "ABC Loans",
                     subTitle: "Mar 1",
@@ -54,7 +60,9 @@ class TabBills extends StatelessWidget {
               ),
             ),
           ),
-          backButton(),
+          backButton(
+            context,
+          ),
         ],
       ),
     );
