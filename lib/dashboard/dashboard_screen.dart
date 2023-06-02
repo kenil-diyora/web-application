@@ -3,8 +3,6 @@ import 'package:demo1/dashboard/dashboard_tab.dart';
 import 'package:demo1/dashboard/dasshboard_web.dart';
 import 'package:flutter/cupertino.dart';
 
-double widthSize = 0;
-
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key? key}) : super(key: key);
 
@@ -29,7 +27,7 @@ class _DashboardPageState extends State<DashboardPage> {
         // );
         return width.maxWidth <= 450
             ? const DashboardMobile()
-            : width.maxWidth > 450 && width.maxWidth <= 800
+            : width.maxWidth > 450 && width.maxWidth < 1024
                 ? const DashboardTab()
                 : const DashboardWeb();
       },

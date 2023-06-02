@@ -24,6 +24,7 @@ Widget billsPieChart() {
     legendOptions: LegendOptions(
       showLegends: false,
     ),
+    chartRadius: 450,
     centerTextStyle: TextStyle(
       fontSize: 34,
       fontWeight: FontWeight.w700,
